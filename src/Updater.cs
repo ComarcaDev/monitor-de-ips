@@ -16,8 +16,12 @@ namespace MonitorIPs
     /// </summary>
     public static class Updater
     {
-        const string ApiUrl = "https://api.github.com/repos/hujeanpaes/monitor-de-ips/releases/latest";
-        const string AllowedPrefix = "https://github.com/hujeanpaes/monitor-de-ips/";
+        const string ApiUrl = "https://api.github.com/repos/ComarcaDev/monitor-de-ips/releases/latest";
+        /// <summary>Únicos enlaces que se abren: el repositorio del proyecto (dueño actual y el anterior, que GitHub redirige).</summary>
+        static readonly string[] AllowedPrefixes = {
+            "https://github.com/ComarcaDev/monitor-de-ips/",
+            "https://github.com/hujeanpaes/monitor-de-ips/",   // nombre de la cuenta hasta noviembre de 2026
+        };
         const long Day = 24L * 3600 * 1000;
 
         public class Info
@@ -169,6 +173,9 @@ namespace MonitorIPs
         static string Str(Dictionary<string, object> d, string k) { object v; return d.TryGetValue(k, out v) && v != null ? Convert.ToString(v) : ""; }
 
         /// <summary>Sólo se aceptan enlaces del propio repositorio.</summary>
-        static string Safe(string url) { return !string.IsNullOrEmpty(url) && url.StartsWith(AllowedPrefix, StringComparison.OrdinalIgnoreCase) ? url : null; }
+        static string Safe(string url)
+        {
+            return !string.IsNullOrEmpty(url) && AllowedPrefixes.Any(p => url.StartsWith(p, StringComparison.OrdinalIgnoreCase)) ? url : null;
+        }
     }
 }

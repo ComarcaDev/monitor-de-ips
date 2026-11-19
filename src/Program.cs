@@ -446,7 +446,7 @@ namespace MonitorIPs
                 {
                     string url = Updater.UrlFor(Str(b, "kind"));
                     if (url == null) throw new ArgumentException("No hay información de la versión nueva");
-                    Process.Start(url); // sólo enlaces de github.com/hujeanpaes/monitor-de-ips (validados en Updater)
+                    Process.Start(url); // sólo enlaces del repositorio del proyecto (validados en Updater.Safe)
                     return Ok();
                 }
                 case "/api/update/skip":
