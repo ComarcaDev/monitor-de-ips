@@ -2,6 +2,14 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versionado [SemVer](https://semver.org/lang/es/).
 
+## [1.11.1] - 2026-11-19
+
+### Cambiado
+- El proyecto pasa a la cuenta **ComarcaDev**: https://github.com/ComarcaDev/monitor-de-ips. Se actualizan el aviso de versión nueva, el instalador (editor y enlaces), la licencia y la documentación.
+
+### Corregido
+- El botón **Descargar** del aviso de versión nueva no respondía tras el cambio de nombre de la cuenta en GitHub: los enlaces nuevos no se reconocían como del proyecto. Las versiones 1.7.0 a 1.11.0 detectan esta actualización pero hay que descargarla a mano desde [Releases](https://github.com/ComarcaDev/monitor-de-ips/releases/latest). A partir de esta versión vuelve a funcionar solo.
+
 ## [1.11.0] - 2026-11-13
 
 ### Añadido
@@ -199,6 +207,7 @@ Versión previa al repositorio (no publicada).
 ### Añadido
 - Monitor portable con ping continuo multi-IP, gráficas, estadísticas, alertas de caída y recuperación, tracert, grupos, ajustes, tema claro/oscuro, logs diarios y exportación a CSV.
 
+[1.11.1]: ../../releases/tag/v1.11.1
 [1.11.0]: ../../releases/tag/v1.11.0
 [1.10.1]: ../../releases/tag/v1.10.1
 [1.10.0]: ../../releases/tag/v1.10.0

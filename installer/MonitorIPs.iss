@@ -13,8 +13,8 @@
 
 #define AppName      "Monitor de IPs"
 #define AppExe       "MonitorIPs.exe"
-#define AppPublisher "hujeanpaes"
-#define AppURL       "https://github.com/hujeanpaes/monitor-de-ips"
+#define AppPublisher "ComarcaDev"
+#define AppURL       "https://github.com/ComarcaDev/monitor-de-ips"
 
 [Setup]
 ; AppId fijo: las versiones nuevas actualizan la instalada. No cambiar.
