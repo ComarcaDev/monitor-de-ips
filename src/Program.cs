@@ -13,14 +13,14 @@ using System.Web.Script.Serialization;
 
 [assembly: AssemblyTitle("Monitor de IPs")]
 [assembly: AssemblyProduct("Monitor de IPs")]
-[assembly: AssemblyVersion("1.11.0.0")]
-[assembly: AssemblyFileVersion("1.11.0.0")]
+[assembly: AssemblyVersion("1.11.1.0")]
+[assembly: AssemblyFileVersion("1.11.1.0")]
 
 namespace MonitorIPs
 {
     static class Program
     {
-        const string Version = "1.11.0";
+        const string Version = "1.11.1";
         static string token;
         static int port;
         static HttpListener listener;
@@ -446,7 +446,7 @@ namespace MonitorIPs
                 {
                     string url = Updater.UrlFor(Str(b, "kind"));
                     if (url == null) throw new ArgumentException("No hay información de la versión nueva");
-                    Process.Start(url); // sólo enlaces de github.com/hujeanpaes/monitor-de-ips (validados en Updater)
+                    Process.Start(url); // sólo enlaces del repositorio del proyecto (validados en Updater.Safe)
                     return Ok();
                 }
                 case "/api/update/skip":

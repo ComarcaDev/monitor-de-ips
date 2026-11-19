@@ -13,4 +13,4 @@ Requisitos: Windows 10 u 11. La primera vez, Windows puede mostrar *"Windows pro
 
 {CHANGES}
 
-Historial completo en [CHANGELOG.md](https://github.com/hujeanpaes/monitor-de-ips/blob/main/CHANGELOG.md).
+Historial completo en [CHANGELOG.md](https://github.com/ComarcaDev/monitor-de-ips/blob/main/CHANGELOG.md).

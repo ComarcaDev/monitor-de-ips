@@ -1,7 +1,7 @@
 # Monitor de IPs
 
-[![Última versión](https://img.shields.io/github/v/release/hujeanpaes/monitor-de-ips?label=versi%C3%B3n&color=4a67f5)](../../releases/latest)
-[![Descargas](https://img.shields.io/github/downloads/hujeanpaes/monitor-de-ips/total?label=descargas&color=22c55e)](../../releases)
+[![Última versión](https://img.shields.io/github/v/release/ComarcaDev/monitor-de-ips?label=versi%C3%B3n&color=4a67f5)](../../releases/latest)
+[![Descargas](https://img.shields.io/github/downloads/ComarcaDev/monitor-de-ips/total?label=descargas&color=22c55e)](../../releases)
 [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-7c5cf0)](LICENSE)
 ![Windows 10 / 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 
@@ -158,4 +158,4 @@ MonitorIPs.exe (C#, .NET Framework 4)
 
 ## Licencia
 
-[MIT](LICENSE) © 2026 hujeanpaes
+[MIT](LICENSE) © 2026 ComarcaDev

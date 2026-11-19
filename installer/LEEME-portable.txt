@@ -20,4 +20,4 @@ LICENCIA
 MIT (ver LICENCIA.txt): puedes usarlo, copiarlo y modificarlo libremente
 citando el aviso de copyright.
 
-Proyecto: https://github.com/hujeanpaes/monitor-de-ips
+Proyecto: https://github.com/ComarcaDev/monitor-de-ips
